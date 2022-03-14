@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <h1 id="heading" style="    font-family: 'Oswald', sans-serif;">Hotel Reservation</h1>    
+
+    <div id="reservation-main-box"> 
+
+        
+<form name="RegForm" onsubmit="validate_form()" id="signup" >
+    <table> 
+
+    <tr>
+        <td>
+            <label>Name</label>
+            <input type="text" name="fname" placeholder="First Name" required>	
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            <label>Email</label>
+            <input type="email" name="email" id="mail" placeholder="Email" required>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label>Phone number</label>
+            <input type="tel" name="phone" placeholder="Contact Number" required>
+        </td>
+    </tr>
+    <tr>	
+        <td colspan="2">
+            <label>Check In</label>
+            <input type="date" name="dtime" id="check-in" required>
+        </td>
+    </tr>
+
+    <tr>	
+        <td colspan="2">
+            <label>Check Out</label>
+            <input type="date" id="check-out" name="dtime" required>
+        </td>
+    </tr>
+    
+    <tr>
+    
+    
+    <td colspan="2">
+    <label>No. of adults</label>
+    <select required>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </td>
+</tr>
+
+<td colspan="2">
+    <label>No. of children</label>
+      <select required>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </td>
+</tr>
+
+<td colspan="2">
+    <label>Type of room</label>
+      <select required>
+        <option>Single Room</option>
+        <option>Double Room</option>
+        <option>Deluxe Room</option>
+      </select>
+    </td>
+</tr>
+
+<td colspan="2">
+    <label>Provision</label>
+      <select required>
+        <option>Breakfast</option>
+        <option>Half Board</option>
+        <option>All Inclusive</option>
+      </select>
+    </td>
+</tr>
+    <td colspan="2">
+        <input type="submit" name="book" value="Confirm Booking" class="click">
+    </td>
+    </tr>
+    </table>
+</form>
+</div>
+
+</body>
+</html>

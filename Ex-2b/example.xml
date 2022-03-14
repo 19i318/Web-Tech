@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ccis_college xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="U:\Code\Ex-4\ccis.xsd">
+  <Lecturer degree="masters">
+    <Name> Putin </Name>
+    <Nationality> Russian </Nationality>
+    <Experience> 2 </Experience>
+  </Lecturer>
+  <Lecturer>
+    <Name> Trump </Name>
+    <Nationality> American </Nationality>
+    <Experience> 4 </Experience>
+    <Phone> Samsung </Phone>
+    <Phone> Blackberry </Phone>
+    <Phone> Apple </Phone>
+  
+  </Lecturer>
+</ccis_college>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NutritionTable>
+
+	
+
+	<Food>
+
+		<FoodItem>Agar</FoodItem>
+
+		<Carbs>81</Carbs>
+
+		<Fiber>8</Fiber>
+
+		<Fat>0.5</Fat>
+
+		<Energy>1280</Energy>
+
+		<Type>Vegetable</Type>
+
+	</Food>
+
+	
+
+	<Food>
+
+		<FoodItem>Apple</FoodItem>
+
+		<Carbs>10</Carbs>
+
+		<Fiber>5</Fiber>
+
+		<Fat>0</Fat>
+
+		<Energy>200</Energy>
+
+		<Type>Fruit</Type>
+
+	</Food>
+
+	
+
+	<Food>
+
+		<FoodItem>Asparagus </FoodItem>
+
+		<Carbs>1</Carbs>
+
+		<Fiber>1</Fiber>
+
+		<Fat>0</Fat>
+
+		<Energy>40</Energy>
+
+		<Type>Vegetable</Type>
+
+	</Food>
+
+	
+
+	<Food>
+
+		<FoodItem>Cabbage</FoodItem>
+
+		<Carbs>0</Carbs>
+
+		<Fiber>1</Fiber>
+
+		<Fat>0</Fat>
+
+		<Energy>14</Energy>
+
+		<Type>Vegetable</Type>
+
+	</Food>
+
+	
+
+	<Food>
+
+		<FoodItem>Banana</FoodItem>
+
+		<Carbs>10</Carbs>
+
+		<Fiber>10</Fiber>
+
+		<Fat>2</Fat>
+
+		<Energy>300</Energy>
+
+		<Type>Fruit</Type>
+
+	</Food>
+
+	
+
+	<Food>
+
+		<FoodItem>Pumpkin</FoodItem>
+
+		<Carbs>6</Carbs>
+
+		<Fiber>1</Fiber>
+
+		<Fat>0.5</Fat>
+
+		<Energy>150</Energy>
+
+		<Type>Vegetable</Type>
+
+	</Food>
+
+</NutritionTable>
