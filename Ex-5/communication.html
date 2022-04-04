@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    email:joxeja9595@nuesond.com
+    password: 
+    api key: 3a5f3f0263e6ff42c4e0f30f041f19cc
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+let API_key= "3a5f3f0263e6ff42c4e0f30f041f19cc";
+function getData(){
+
+    let lat = document.forms['comm-form']['lat'].valueAsNumber;
+    let long = document.forms['comm-form']['long'].valueAsNumber;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+
+       let parsed_req = JSON.parse(xhttp.responseText);
+       $('#weather-data').text(parsed_req['weather'][0]['description']);
+       $('#raw-data').text(JSON.stringify(parsed_req));
+
+    }
+    };
+    xhttp.open("GET", `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_key}`, true);
+    xhttp.send();
+
+    
+
+   return false;
+}
+</script>
+</head>
+<body>
+
+
+
+<form id="comm-form" onsubmit="return getData(); ">
+    <label for="lat">Enter latitude</label>
+    <input type="number" name="lat" id="lat">
+
+    <label for="lat">Enter longitude</label>
+    <input type="number" name="long" id="long">
+
+    <button id="show">Show weather data</button>
+</form>
+
+<br>
+
+<h3>Weather data:</h3>
+<p id="weather-data"></p>
+<p id="demo"></p>
+
+<br>
+
+<h3> Raw data </h3>
+<p id="raw-data"></p>
+
+</body>
+</html>
+
